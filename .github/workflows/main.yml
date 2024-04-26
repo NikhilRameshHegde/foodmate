@@ -5,10 +5,8 @@ on:
 
 jobs:
   mainjob:
-    name:"Print default environment variables"
+    name: "Print default environment variables"
     runs-on: ubuntu-latest
-
     steps:
-    - name: print-values-of-env-vars
-      run:
-        echo "$GITHUB_REPOSITORY_OWNER"
+      - name: print-values-of-env-vars
+        run: echo "$GITHUB_REPOSITORY_OWNER"
